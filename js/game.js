@@ -6,11 +6,11 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "Its a sunny afternoon and you come acros Porky the Pig at the pigs' den",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Pet him",
+                    nextLevel: "porky",
                 },
 
                 {
@@ -20,20 +20,25 @@ var game = {
             ]
         },
 
-        cave: {
+        porky: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "After weeks of taking care of Porky, the farmer comes up to you and tells you Porky is transferring to the Slaughterhouse"
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "You Strongly Say No beacuse you grew an attachment to Porky",
+                    nextLevel: "piglets",
+                },
+                {
+                    text: "You let the Farmer take Porky away",
+                    nextLevel:"slaughterHouse101",
+                    
                 },
             ]
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message:"The U.S. raises some 100 millio pigs for food each year (including Porky). Without a kind human interaction, Porky would never see mankind as good.",
             choices: [
                 {
                     text: "Start over",
